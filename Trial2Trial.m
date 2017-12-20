@@ -12,7 +12,6 @@ for k = 1:length(textFiles) %%Cycles through individual files (k is filenumber
     notfound1 = 1;
     notfound2 = 1;
     endfile = 0;
-    k
     while ~feof(fid) %%cycles through lines in individual file
         fidLine = fgetl(fid); %%Get next line in individual file
         if contains(fidLine,'payhvalue	') 
